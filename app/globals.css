@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cream: #f4ebdd;
+  --charcoal: #24211f;
+  --gold: #c6a15b;
+  --white-soft: #fffcf7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--white-soft);
+  color: var(--charcoal);
+  font-family: Arial, sans-serif;
+}
+
+img {
+  user-select: none;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.container-shell {
+  @apply mx-auto max-w-7xl px-4 lg:px-8;
+}
+
+.section-tag {
+  @apply text-[11px] uppercase tracking-[0.26em] text-[#6b625d];
+}
+
+.premium-card {
+  @apply rounded-[28px] border border-[#E7DCC7] bg-whiteSoft shadow-premium;
+}
+
+.gold-button {
+  @apply inline-flex items-center justify-center rounded-full bg-[#C6A15B] px-5 py-3 text-sm font-semibold text-[#24211F] transition hover:bg-[#b6924d];
+}
+
+.ghost-button {
+  @apply inline-flex items-center justify-center rounded-full border border-[#24211F] px-5 py-3 text-sm font-medium text-[#24211F] transition hover:bg-[#24211F] hover:text-white;
+}
